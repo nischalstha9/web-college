@@ -1,84 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Form</title>
-    <style>
-        .row{
-            display: flex;
-            justify-content: space-between;
-        }
-        .buttons{
-            float: right;
-        }
-    </style>
-</head>
-<body>
-    <form action="" method="get">
-        <div class="row">
-            <div class="col">
-                <label for="fname">First Name</label><br>
-                <input required type="text" name="fname" id="fname"><br>
 
-                <label for="lname">Last Name</label><br>
-                <input required type="text" name="lname" id="lname"><br>
+    <head>
+        <title>Form</title>
+        <style>
+            .row {
+                display: flex;
+                justify-content: space-between;
+            }
 
-                <label for="company">Company</label><br>
-                <input required type="text" name="company" id="company"><br>
+            .buttons {
+                float: right;
+            }
+        </style>
+    </head>
 
-                <label for="email">Email</label><br>
-                <input required type="text" name="email" id="email"><br>
+    <body>
+        <form action="" method="get">
+            <div class="row">
+                <div class="col">
+                    <label for="fname">First Name</label><br>
+                    <input required type="text" name="fname" id="fname"><br>
 
-                <label for="phone">Phone Number</label><br>
-                <input required type="number" name="phone" id="phone"><br>
-            </div>
-            <div class="col">
-                <div class="row">
-                    <div class="col">
-                        <label for="meal">Meal Preference</label><br>
-                    </div>
-                    <div class="col">
-                        <small>Lunch Detail</small>
-                    </div>
+                    <label for="lname">Last Name</label><br>
+                    <input required type="text" name="lname" id="lname"><br>
+
+                    <label for="company">Company</label><br>
+                    <input required type="text" name="company" id="company"><br>
+
+                    <label for="email">Email</label><br>
+                    <input required type="text" name="email" id="email"><br>
+
+                    <label for="phone">Phone Number</label><br>
+                    <input required type="number" name="phone" id="phone"><br>
                 </div>
-                <select id="meal" name="meal">
-                    <option value="veg">Vegeterian</option>
-                    <option value="non_veg">Non-Vegeterian</option>
-                </select><br>
-                
-                <div class="row">
-                    <div class="col">
-                        <label for="">Payment Method</label><br>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <label for="meal">Meal Preference</label><br>
+                        </div>
+                        <div class="col">
+                            <small>Lunch Detail</small>
+                        </div>
                     </div>
-                    <div class="col">
-                        <small>Payment Detail</small>
+                    <select id="meal" name="meal">
+                        <option value="veg">Vegeterian</option>
+                        <option value="non_veg">Non-Vegeterian</option>
+                    </select><br>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Payment Method</label><br>
+                        </div>
+                        <div class="col">
+                            <small>Payment Detail</small>
+                        </div>
                     </div>
+                    <input type="radio" id="cash" name="payment" value="cash">
+                    <label for="cash">Cash</label>
+                    <input type="radio" id="cheque" name="payment" value="cheque">
+                    <label for="cheque">Cheque</label>
+                    <input type="radio" id="draft" name="payment" value="draft">
+                    <label for="draft">Demand Draft</label><br>
+
+                    <label for="chque_no">Cheque Number</label><br>
+                    <input required type="text" name="chque_no" id="chque_no"><br>
+
+                    <label for="bank_name">Drawn On (Bank Name)</label><br>
+                    <input required type="text" name="bank_name" id="bank_name"><br>
+
+                    <label for="payable_at">Payable At</label><br>
+                    <input required type="text" name="payable_at" id="payable_at"><br>
                 </div>
-                <input type="radio" id="cash" name="payment" value="cash">
-                <label for="cash">Cash</label>
-                <input type="radio" id="cheque" name="payment" value="cheque">
-                <label for="cheque">Cheque</label>
-                <input type="radio" id="draft" name="payment" value="draft">
-                <label for="draft">Demand Draft</label><br>
-
-                <label for="chque_no">Cheque Number</label><br>
-                <input required type="text" name="chque_no" id="chque_no"><br>
-
-                <label for="bank_name">Drawn On (Bank Name)</label><br>
-                <input required type="text" name="bank_name" id="bank_name"><br>
-
-                <label for="payable_at">Payable At</label><br>
-                <input required type="text" name="payable_at" id="payable_at"><br>
             </div>
-        </div>
-        
-        <label for="donate_us">Donate Us</label><br>
-        <input required type="range" name="donate_us" id="donate_us" min="0" max="1000" value="500"><br>
 
-        <div class="buttons">
-            <input type="submit" class="submit" value="Submit">
-            <input type="reset" class="reset" value="Reset">
-        </div>
-    </form>
-    
-</body>
+            <label for="donate_us">Donate Us</label><br>
+            <input required type="range" name="donate_us" id="donate_us" min="0" max="1000" value="500"><br>
+
+            <div class="buttons">
+                <input type="submit" class="submit" value="Submit">
+                <input type="reset" class="reset" value="Reset">
+            </div>
+        </form>
+
+    </body>
+
 </html>
