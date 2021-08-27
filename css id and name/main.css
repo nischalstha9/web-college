@@ -1,0 +1,29 @@
+* {
+  /*universal selector*/
+  padding: 0px;
+  margin: 0px;
+}
+
+.green {
+  /* CSS name selector*/
+  color: green;
+}
+#head {
+  /* CSS id selector*/
+  color: blue;
+}
+a {
+  /* CSS tag selector*/
+  text-decoration: none;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: blueviolet;
+  font-weight: 800;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: antiquewhite;
+  padding: 0px 10px 0px 10px;
+  font-family: "Courier New", Courier, monospace;
+}

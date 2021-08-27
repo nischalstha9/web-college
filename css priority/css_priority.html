@@ -1,0 +1,42 @@
+<html>
+
+    <head>
+        <title>CSS Priority</title>
+        <link rel="stylesheet" href="css1.css">
+        <link rel="stylesheet" href="css2.css">
+        <style>
+            .internal {
+                color: red;
+            }
+
+            li {
+                font-size: 28px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 style="color:green">Inline CSS</h1>
+        <h1 class="internal">Internal CSS</h1>
+        <h1 class="external">External CSS 1</h1>
+        <h1 class="external2">External CSS 2</h1>
+        <h1 class="internal" style="color:green">This is Internal VS Inline CSS and it is rendering green color of
+            inline css</h1>
+        <h1 class="internal external">This is Internal VS External CSS and it is rendering red color of internal css
+        </h1>
+        <h1 class="external external2">This is External CSS 1 VS External CSS 2 and it is rendering yellow color of
+            external css 2. This concludes to priority on basis of css file linked. CSS file linked at last has more
+            priority than css linked earlier.
+        </h1>
+        <hr>
+        <h1>Hence the priority goes as</h1>
+        <ol>
+            <li>Inline CSS</li>
+            <li>Internal CSS</li>
+            <li>External CSS linked late</li>
+            <li>External CSS linked earlier</li>
+        </ol>
+
+    </body>
+
+</html>
