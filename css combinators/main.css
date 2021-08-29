@@ -1,0 +1,32 @@
+.first h1 {
+  /* Descendant combinator */
+  /* effects everything inside .first */
+  color: red;
+}
+
+.first > h1 {
+  /* child combinator */
+  /* effects child inside .first*/
+  color: green;
+}
+
+h1 {
+  /* effects every h1*/
+  color: blue;
+}
+
+p {
+  color: orange;
+}
+
+h3 ~ p {
+  /* General Sibling combinator */
+  /* effects sibling */
+  color: turquoise;
+}
+
+.header + p {
+  /* immediate sibling combinator */
+  /* effects every first p below h1 */
+  color: yellow;
+}
