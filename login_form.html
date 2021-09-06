@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <hr>
+    <form action="./form_submit.php" method="post" id='login' onsubmit="return validate()">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required>
+        <label for="password">Password:</label>
+        <input type="password" name='password' id="password" required>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <script>
+        const validate = () =>{
+            const password = document.getElementById("password").value
+            if (password.length < 8){
+                alert("Password not strong!")
+                return false
+            }
+            return true
+        }
+    </script>
+    
+</body>
+</html>
