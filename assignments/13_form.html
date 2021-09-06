@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Form</title>
+        <style>
+            .row {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .buttons {
+                float: right;
+            }
+
+            label {
+                text-transform: capitalize;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form action="" method="get">
+            <label for="fullname">Full Name</label><br>
+            <input required type="text" name="fullname" id="fullname"><br>
+
+            <label for="address">Adress</label><br>
+            <input required type="text" name="address" id="address"><br>
+
+            <label for="email">Email</label><br>
+            <input required type="text" name="email" id="email"><br>
+
+            <label for="username">Username</label><br>
+            <input required type="text" name="username" id="username"><br>
+
+            <label for="password">Password</label><br>
+            <input required type="password" name="password" id="password"><br>
+
+            <label for="dob">Date of Birth</label><br>
+            <input required type="date" name="dob" id="dob"><br>
+
+            <label for="phone">Phone Number</label><br>
+            <input required type="number" name="phone" id="phone"><br>
+
+            <label for="">Gender</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">male</label>
+            <input type="radio" id="females" name="gender" value="females">
+            <label for="females">females</label>
+            <input type="radio" id="others" name="gender" value="others">
+            <label for="others">other</label><br>
+
+            <label for="hobbies">Hobbies</label><br>
+            <input type="checkbox" id="hobby1" name="hobby1" value="Swimming">
+            <label for="hobby1">Swimming</label><br>
+            <input type="checkbox" id="hobby2" name="hobby2" value="Drawing">
+            <label for="hobby2">Drawing</label><br>
+            <input type="checkbox" id="hobby3" name="hobby3" value="Music">
+            <label for="hobby3">Music</label><br>
+
+            <label for="dp">Profile Picture</label><br>
+            <input type="file" name="dp" id="dp"><br>
+
+            <label for="description">description</label><br>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+
+            <hr>
+            <input type="submit" class="submit" value="Submit">
+            <input type="reset" class="reset" value="Reset">
+        </form>
+
+    </body>
+
+</html>
