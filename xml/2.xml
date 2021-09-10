@@ -1,0 +1,5 @@
+<!-- Create following XML element with attribute without tag
+a. people element with attribute age, gender -->
+
+<?xml version='1.0' encoding="UTF-8"?>
+<People age="22" gender="M"/>

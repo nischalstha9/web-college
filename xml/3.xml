@@ -1,0 +1,31 @@
+<!-- a. Users with multiple User
+b. User with following child.
+    i. Name(child)
+    ii. Address(child)
+        1. District (sub-child)
+        1. Location (sub-child) -->
+
+<?xml version='1.0' encoding="UTF-8"?>
+<Users>
+    <User>
+        <Name>Nischal Shrestha</Name>
+        <Address>
+            <District>Kathmandu</District>
+            <Location>Samakhushi</Location>
+        </Address>
+    </User>
+    <User>
+        <Name>Niraj Shrestha</Name>
+        <Address>
+            <District>Kathmandu</District>
+            <Location>Banasthali</Location>
+        </Address>
+    </User>
+    <User>
+        <Name>John Richard</Name>
+        <Address>
+            <District>Lalitpur</District>
+            <Location>Sanepa</Location>
+        </Address>
+    </User>
+</Users>
