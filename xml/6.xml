@@ -7,7 +7,7 @@ b. User(root)
         1. Location (sub-child) -->
 
 <?xml version='1.0' encoding="UTF-8"?>
-<!DOCTYPE User[
+<!DOCTYPE Users[
 <!ELEMENT Users (User+)>
 <!ELEMENT User (Name, Address)>
 <!ELEMENT Name (#PCDATA)>
