@@ -1,0 +1,26 @@
+mysql -h localhost -u root
+
+Create database Web;
+
+show databases;
+
+use web;
+
+Create Table customer (ID int NOT NULL AUTO_INCREMENT PRIMARY KEY, username varchar(255) NOT NULL, contact varchar(13) NOT NULL);
+
+ALTER TABLE `customer` ADD `address` VARCHAR(255) NULL AFTER `contact`, ADD `city` VARCHAR(255) NULL AFTER `address`, ADD `postal_code` VARCHAR(255) NULL AFTER `city`;
+
+Show tables;
+
+INSERT INTO customer (username, contact, address, city, postal_code, country) VALUES ("nischal", "9823000133", "Grande", "kathmandu", "144660", "Nepal");
+
+INSERT INTO customer (username, contact, address, city, postal_code, country) VALUES
+("vivek", "9823000123", "lokanthali", "bhaktapur", "133660", "Nepal"),("Anish", "9080000112", "machapokhari", "kathmandu", "144330", "Nepal");
+
+===================================================================================================
+
+ UPDATE customer SET address='samakhushi' WHERE id=1;
+ UDPATE customer SET address='swyambhu', postal_code="133469" WHERE id=6;
+ 
+ 
+
