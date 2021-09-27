@@ -1,0 +1,50 @@
+<!-- 
+XML with internal DTD for following specs
+a. Users with multiple User
+b. User with following child(root)
+    i. Name(child)
+    ii. Hobby(child)
+    iii. Address(child)
+        1. District (sub-child)
+        1. Location (sub-child) 
+c. User has type country
+d. Single user can have multiple hobbies
+-->
+
+<?xml version='1.0' encoding="UTF-8"?>
+<!DOCTYPE Users[
+<!ELEMENT Users (User+)>
+<!ELEMENT User (Name,Hobby+, Address)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Hobby (#PCDATA)>
+<!ELEMENT Address (District, Location)>
+<!ELEMENT District (#PCDATA)>
+<!ELEMENT Location (#PCDATA)>
+<!ATTLIST User country CDATA #REQUIRED>
+]>
+<Users>
+    <User country = "Nepal">
+        <Name>Nischal Shrestha</Name>
+        <Hobby>Driving</Hobby>
+        <Address>
+            <District>Kathmandu</District>
+            <Location>Samakhushi</Location>
+        </Address>
+    </User>
+    <User country="Nepal">
+        <Name>Niraj Shrestha</Name>
+        <Hobby>Drinking</Hobby>
+        <Address>
+            <District>Kathmandu</District>
+            <Location>Banasthali</Location>
+        </Address>
+    </User>
+    <User country="USA">
+        <Name>John Richard</Name>
+        <Hobby>Swimming</Hobby>
+        <Address>
+            <District>Texas</District>
+            <Location>Austin</Location>
+        </Address>
+    </User>
+</Users>

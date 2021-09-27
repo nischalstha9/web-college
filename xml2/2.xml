@@ -1,0 +1,39 @@
+<!-- 
+XML with internal DTD for following specs
+a. Library has multiple books with single book
+b. Single book has isbn attribute
+c. Book also has name, author, page and price element
+d. Books can be written by multiple author with author_name, email
+e. Price have currency atrribute with NPR and USD choice with default NPR value
+-->
+
+<?xml version='1.0' encoding="UTF-8"?>
+<!DOCTYPE Books SYSTEM "2.dtd">
+<Books>
+    <Book ISBN = "56789">
+        <Name>Web Technology</Name>
+        <Author>
+            <Author_name>Nischal Shrestha</Author_name>
+            <Email>nischal@g.com</Email>
+        </Author>
+        <Author>
+            <Author_name>Niraj Shrestha</Author_name>
+            <Email>niraj@g.com</Email>
+        </Author>
+        <Page>50</Page>
+        <Price Currency="NPR">500</Price>
+    </Book>
+    <Book ISBN = "56790">
+        <Name>Java Technology</Name>
+        <Author>
+            <Author_name>Bibek Shrestha</Author_name>
+            <Email>bibek@g.com</Email>
+        </Author>
+        <Author>
+            <Author_name>Niraj Shrestha</Author_name>
+            <Email>niraj@g.com</Email>
+        </Author>
+        <Page>60</Page>
+        <Price Currency="USD">5</Price>
+    </Book>
+</Books>
