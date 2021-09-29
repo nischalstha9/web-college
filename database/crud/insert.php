@@ -21,7 +21,7 @@ if (isset($_POST['submitBtn'])) {
     );
     $sql->execute();
     if ($sql->affected_rows !== 0) {
-        header("Location: read.php");
+        header("Location: ./index.php");
     }
     $sql->close();
     exit();

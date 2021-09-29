@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 14, 2021 at 05:21 AM
+-- Generation Time: Sep 29, 2021 at 01:42 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -28,27 +28,29 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `customer` (
-  `id` int(11) NOT NULL,
-  `username` varchar(255) NOT NULL,
-  `contact` varchar(13) NOT NULL,
-  `address` varchar(255) DEFAULT NULL,
-  `city` varchar(255) DEFAULT NULL,
-  `postal_code` varchar(255) DEFAULT NULL,
-  `country` varchar(255) DEFAULT NULL
+  `customer_id` int(6) UNSIGNED NOT NULL,
+  `customer_name` varchar(30) NOT NULL,
+  `contact_name` varchar(30) NOT NULL,
+  `address` varchar(30) NOT NULL,
+  `city` varchar(30) NOT NULL,
+  `postal_code` varchar(30) NOT NULL,
+  `country` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `customer`
 --
 
-INSERT INTO `customer` (`id`, `username`, `contact`, `address`, `city`, `postal_code`, `country`) VALUES
-(1, 'nischal', '9823000133', 'samakhushi', 'kathmandu', '144660', 'Nepal'),
-(2, 'vivek', '9823000123', 'lokanthali', 'bhaktapur', '133660', 'Nepal'),
-(3, 'Anish', '9080000112', 'machapokhari', 'kathmandu', '144330', 'Nepal'),
-(6, 'niraj', '9823000888', 'swyambhu', 'kathmandu', '133469', 'Nepal'),
-(7, 'saban', '9835678899', 'machapokhari', 'kathmandu', '144330', 'Nepal'),
-(9, 'ram', '9898', 'ram', 'ram', '990', 'ram'),
-(10, 'shyam', '89', 'sh', 'sh', '89', 'sh');
+INSERT INTO `customer` (`customer_id`, `customer_name`, `contact_name`, `address`, `city`, `postal_code`, `country`) VALUES
+(2, 'vivek', '9823000123', 'banasthali', 'Lalitpur', '133660', 'Nepal'),
+(4, 'kumar', '97265432', 'jughu', 'Delhi', '144330', 'India'),
+(5, 'amit', '97365432', 'jughu', 'Delhi', '144330', 'India'),
+(6, 'sugam', '97165432', 'jughu', 'Delhi', '144330', 'India'),
+(7, 'kumar', '98492341', 'minTown', 'New York', '13430', 'USA'),
+(8, 'amit', '98292341', 'minTown', 'New York', '13430', 'USA'),
+(9, 'asis', '98192341', 'minTown', 'New York', '13430', 'USA'),
+(10, 'sugam', '98792341', 'minTown', 'New York', '13430', 'USA'),
+(11, 'vivek heka edited', '9823000123', 'banasthali', 'Lalitpur', '133660', 'Nepal and America');
 
 --
 -- Indexes for dumped tables
@@ -58,7 +60,7 @@ INSERT INTO `customer` (`id`, `username`, `contact`, `address`, `city`, `postal_
 -- Indexes for table `customer`
 --
 ALTER TABLE `customer`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`customer_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -68,7 +70,7 @@ ALTER TABLE `customer`
 -- AUTO_INCREMENT for table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `customer_id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

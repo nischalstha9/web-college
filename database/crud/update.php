@@ -14,7 +14,7 @@ if (isset($_GET['id'])) {
             $customer = $row;
         }
     } else {
-        Header("Location: /");
+        Header("Location: ./index.php");
         exit();
     }
     if (isset($_POST['submitBtn'])) {
@@ -37,13 +37,13 @@ if (isset($_GET['id'])) {
         );
         $sql->execute();
         if ($sql->affected_rows > 0) {
-            header("Location: /");
+            header("Location: ./index.php");
         }
         $sql->close();
         exit();
     }
 } else {
-    Header("Location: /");
+    Header("Location: ./index.php");
     exit();
 }
 ?>
